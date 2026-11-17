@@ -1,10 +1,10 @@
 /* TransEaz Central Product Catalogue
- * 9 Categories x 15 Products = 135 Ugandan Market Reference Listings
- * Reference prices checked: 2026-11-16 (UGX, no markup added).
+ * 9 Categories x 15 Products = 135 Ugandan Market Reference Listings (Jumia Uganda Research)
+ * Reference prices checked: 2026-11-17 (UGX, current Ugandan retail prices).
  * Prices are indicative and subject to availability via WhatsApp confirmation.
  */
 
-export const PRICE_CHECK_DATE = '2026-11-16';
+export const PRICE_CHECK_DATE = '2026-11-17';
 
 export const PRODUCT_CATEGORIES = [
   'All',
@@ -33,7 +33,7 @@ export const CATEGORY_ICONS = {
 
 export const PRODUCTS = [
   // ===========================================================================
-  // 1. ELECTRONICS (15 products)
+  // 1. ELECTRONICS (15 products — Jumia Uganda current UGX prices)
   // ===========================================================================
   {
     id: 'tez-el-01',
@@ -41,7 +41,7 @@ export const PRODUCTS = [
     category: 'Electronics',
     price: 58000,
     image: './assets/products/powerbank.jpg',
-    description: 'High-capacity portable power bank with 15W Type-C fast charging and included cable.',
+    description: 'High-capacity 20,000mAh portable power bank with 15W Type-C fast charging, dual USB output, and built-in LED torch.',
     specs: '20,000mAh · 15W Type-C · Multi-output',
     badge: '20,000mAh',
     featured: true
@@ -51,9 +51,9 @@ export const PRODUCTS = [
     name: 'Oraimo PowerNova QF1 Power Bank 27000mAh',
     category: 'Electronics',
     price: 95000,
-    image: './assets/products/powerbank.jpg',
-    description: 'High-capacity 22.5W fast-charging power bank with a smart digital battery percentage display.',
-    specs: '27,000mAh · 22.5W Fast Charge · Digital LED',
+    image: './assets/products/powerbank-only.jpg',
+    description: 'Heavy-duty 27,000mAh 22.5W fast-charging power bank with AniFast smart charging for phones and tablets.',
+    specs: '27,000mAh · 22.5W Fast Charge · Multi-Device',
     badge: '27,000mAh'
   },
   {
@@ -62,8 +62,8 @@ export const PRODUCTS = [
     category: 'Electronics',
     price: 38000,
     image: './assets/products/earbuds.jpg',
-    description: 'Compact true wireless Bluetooth earbuds with Sound360 audio and anti-lost design in Black.',
-    specs: 'Bluetooth · Charging Case · Black',
+    description: 'Compact true wireless Bluetooth earbuds with Sound360 spatial audio and pocket charging case.',
+    specs: 'Bluetooth 5.3 · Charging Case · 36-Hr Playtime',
     featured: true
   },
   {
@@ -71,17 +71,17 @@ export const PRODUCTS = [
     name: 'Oraimo SpaceBuds Neo True Wireless Earbuds',
     category: 'Electronics',
     price: 36000,
-    image: './assets/products/earbuds.jpg',
-    description: 'Lightweight spatial-audio true wireless earpods with compact pocket charging case.',
-    specs: 'Bluetooth · Spatial Sound · Black'
+    image: './assets/products/earbuds-enc.webp',
+    description: 'Lightweight spatial-audio true wireless earpods with low-latency game mode and compact charging case.',
+    specs: 'Bluetooth · Spatial Sound · Pocket Case'
   },
   {
     id: 'tez-el-05',
-    name: 'Oraimo Air Buds 4 ENC Wireless Earbuds',
+    name: 'Oraimo AirBuds 4 ENC Wireless Earbuds',
     category: 'Electronics',
     price: 44000,
     image: './assets/products/earbuds.jpg',
-    description: 'Environmental noise-cancelling call earbuds offering up to 38 hours combined playtime.',
+    description: 'Environmental noise-cancelling call earbuds offering clear voice pickup and up to 38 hours combined battery life.',
     specs: 'ENC Call Mic · 38-Hr Battery · Wireless'
   },
   {
@@ -89,1213 +89,1213 @@ export const PRODUCTS = [
     name: 'Oraimo SpaceBox OBS-382 Bluetooth Speaker',
     category: 'Electronics',
     price: 88000,
-    image: './assets/products/smartwatch.jpg',
-    description: 'Portable wireless Bluetooth speaker featuring heavy bass output and ambient light show.',
-    specs: 'Wireless Bluetooth · Heavy Bass · Black'
+    image: './assets/products/speaker-sonic.jpg',
+    description: 'Portable cylindrical wireless Bluetooth speaker featuring HavyBass output, FM radio, and top control buttons.',
+    specs: 'Wireless Bluetooth · Heavy Bass · Carry Loop'
   },
   {
     id: 'tez-el-07',
     name: 'Oraimo SpaceBox 8W Portable FM Speaker',
     category: 'Electronics',
     price: 48000,
-    image: './assets/products/smartwatch.jpg',
-    description: 'Compact 8W portable Bluetooth speaker with built-in FM radio in a neutral grey finish.',
-    specs: '8W Output · Bluetooth + FM · Grey'
+    image: './assets/products/speaker-fm.webp',
+    description: 'Compact 8W spherical portable Bluetooth speaker with built-in FM radio and fabric acoustic mesh.',
+    specs: '8W Output · Bluetooth + FM · Space Grey'
   },
   {
     id: 'tez-el-08',
     name: 'Oraimo Watch 6 Lite OSW-809 Smartwatch',
     category: 'Electronics',
     price: 79000,
-    image: './assets/products/smartwatch.jpg',
-    description: 'Everyday smartwatch in Black for notifications, activity tracking, and daily timekeeping.',
-    specs: 'OSW-809 · Touch Display · Black'
+    image: './assets/products/smartwatch-only.jpg',
+    description: 'Square HD smartwatch in matte black for WhatsApp notifications, step tracking, heart rate, and daily alarms.',
+    specs: 'OSW-809 · HD Touch Display · Black'
   },
   {
     id: 'tez-el-09',
     name: 'Oraimo Watch Nova 2 Lite 1.93" AMOLED',
     category: 'Electronics',
     price: 75000,
-    image: './assets/products/smartwatch.jpg',
-    description: 'Full-touch 1.93-inch AMOLED colour screen smartwatch for fitness and smartphone alerts.',
-    specs: '1.93" AMOLED · Full Touch · Black'
+    image: './assets/products/smartwatch-amoled.webp',
+    description: 'Full-touch 1.93-inch AMOLED colour screen smartwatch with fitness modes and smartphone call alerts.',
+    specs: '1.93" AMOLED · Full Touch · Bluetooth Calls'
   },
   {
     id: 'tez-el-10',
     name: 'Oraimo Watch 5 Lite 2.01" IP68 Smartwatch',
     category: 'Electronics',
-    price: 39102,
+    price: 39100,
     image: './assets/products/smartwatch.jpg',
-    description: 'Water-resistant IP68 smartwatch with 2.01-inch HD screen and wireless calling support.',
+    description: 'Water-resistant IP68 smartwatch with 2.01-inch HD screen, 100+ sports modes, and wireless calling.',
     specs: '2.01" HD · IP68 · Wireless Calling'
   },
   {
     id: 'tez-el-11',
-    name: 'Oraimo HyperGaN 65W Wall Charger Kit',
+    name: 'Oraimo HyperGaN 65W Fast Wall Charger Kit',
     category: 'Electronics',
-    price: 159315,
-    image: './assets/products/powerbank.jpg',
-    description: 'High-speed 65W GaN wall adapter bundled with a 100W USB-C to USB-C fast charging cable.',
-    specs: '65W GaN · 100W C-to-C Cable · PD/QC'
+    price: 159300,
+    image: './assets/products/charger-gan65w.jpg',
+    description: 'High-speed 65W dual-port GaN wall adapter block capable of fast-charging laptops, tablets, and smartphones.',
+    specs: '65W GaN PD · Dual USB-C + USB-A · Fast Charge'
   },
   {
     id: 'tez-el-12',
-    name: 'Oraimo Firefly 3 Fast Charger Kit (Micro-USB)',
+    name: 'Oraimo Firefly 3 Fast Charger Kit (Adapter + Cable)',
     category: 'Electronics',
-    price: 18999,
-    image: './assets/products/powerbank.jpg',
-    description: 'Compact wall charger adapter paired with a durable Micro-USB fast charging cable.',
-    specs: 'Wall Adapter + Micro-USB Cable · Black'
+    price: 19000,
+    image: './assets/products/charger-wall.webp',
+    description: 'Compact 2A wall charger adapter bundled with a durable fast-charging data cable for everyday phone charging.',
+    specs: 'Wall Adapter + Charging Cable · Surge Safe'
   },
   {
     id: 'tez-el-13',
-    name: 'Oraimo Foldable USB Type-C Fast Charge Cable',
+    name: 'Oraimo Foldable Braided USB Type-C Cable',
     category: 'Electronics',
     price: 15000,
-    image: './assets/products/powerbank.jpg',
-    description: 'Reinforced foldable USB Type-C cable built for reliable daily charging and data transfer.',
-    specs: 'USB-A to Type-C · Fast Charge & Data'
+    image: './assets/products/usb-c-cable.jpg',
+    description: 'Reinforced nylon-braided USB Type-C cable with velcro strap for tangle-free fast charging and data sync.',
+    specs: '1m Braided · Type-C Fast Charge & Data'
   },
   {
     id: 'tez-el-14',
     name: 'Oraimo Type-C USB Data & Charging Cable',
     category: 'Electronics',
     price: 14875,
-    image: './assets/products/powerbank.jpg',
-    description: 'Standard Black USB Type-C data and fast charging cable compatible with Android phones.',
-    specs: 'USB Type-C · Black'
+    image: './assets/products/usb-cable-black.jpg',
+    description: 'Heavy-duty black USB-A to Type-C fast charging and high-speed data transfer cable for Android devices.',
+    specs: 'USB-A to Type-C · 3A Fast Charge · Black'
   },
   {
     id: 'tez-el-15',
-    name: 'Oraimo BoomPop N ANC Wireless Headphones',
+    name: 'Oraimo BoomPop N ANC Over-Ear Headphones',
     category: 'Electronics',
     price: 98000,
-    image: './assets/products/earbuds.jpg',
-    description: 'Over-ear wireless Bluetooth headphones featuring hybrid noise cancellation for focused study.',
-    specs: 'Over-Ear · Hybrid ANC · Wireless'
+    image: './assets/products/headphones-anc.webp',
+    description: 'Over-ear wireless Bluetooth headphones featuring active noise cancellation and plush ear cushions for focused study.',
+    specs: 'Over-Ear · Hybrid ANC · 60-Hr Playtime'
   },
 
   // ===========================================================================
-  // 2. FASHION (15 products)
+  // 2. FASHION (15 products — Jumia Uganda current UGX prices)
   // ===========================================================================
   {
     id: 'tez-fa-01',
-    name: 'Free-Size Casual Everyday Dress',
+    name: 'Free-Size Casual Everyday Campus Dress',
     category: 'Fashion',
     price: 50000,
-    image: './assets/products/sneakers.jpg',
-    description: 'Comfortable free-size casual dress suited for campus classes and weekend wear.',
-    specs: 'Free Size · Casual Fit'
+    image: './assets/products/dress-casual.webp',
+    description: 'Comfortable, breathable casual dress suited for university lectures, campus events, and weekend outings.',
+    specs: 'Free Size · Breathable Fabric · Casual Fit'
   },
   {
     id: 'tez-fa-02',
     name: 'Modern Contrast Blue Casual Sneakers',
     category: 'Fashion',
     price: 55000,
-    image: './assets/products/sneakers.jpg',
-    description: 'Lace-up contrast blue sneakers crafted for comfortable daily walking around campus.',
-    specs: 'Contrast Blue · Lace-Up Sneakers'
+    image: './assets/products/sneakers-blue.webp',
+    description: 'Color-block blue and white lace-up trainers with cushioned sole for comfortable daily walking around campus.',
+    specs: 'Contrast Blue · Cushioned Outsole'
   },
   {
     id: 'tez-fa-03',
-    name: 'Structured Laptop Backpack',
+    name: 'Structured Multi-Pocket Laptop Backpack',
     category: 'Fashion',
     price: 95000,
     image: './assets/products/backpack.jpg',
-    description: 'Roomy laptop backpack with padded sleeve and zippered compartments for books and electronics.',
-    specs: 'Laptop Compartment · Multi-Pocket',
+    description: 'Water-resistant structured navy laptop backpack with padded 15.6" sleeve and zippered organizer pockets.',
+    specs: 'Fits 15.6" Laptop · Water-Resistant',
     featured: true
   },
   {
     id: 'tez-fa-04',
     name: 'Bekia Men Outdoor Non-Slip Sports Sneakers',
     category: 'Fashion',
-    price: 35682,
-    image: './assets/products/sneakers.jpg',
-    description: 'Breathable men’s outdoor sports sneakers with textured non-slip sole for daily commuting.',
-    specs: 'Breathable Mesh · Non-Slip Sole'
+    price: 35680,
+    image: './assets/products/sneakers-sports-men.webp',
+    description: 'High-top red and black sports sneakers with grippy non-slip rubber sole for daily commuting and court wear.',
+    specs: 'Sizes 40–44 · Non-Slip Rubber Sole'
   },
   {
     id: 'tez-fa-05',
     name: 'Men Business Leather Belt (Automatic Buckle)',
     category: 'Fashion',
     price: 19900,
-    image: './assets/products/sneakers.jpg',
-    description: 'Classic formal/casual leather belt featuring an easy-adjust automatic buckle.',
-    specs: 'Leather Strap · Automatic Buckle'
+    image: './assets/products/leather-belt.jpg',
+    description: 'Classic black genuine-look leather dress belt featuring a polished silver automatic slide buckle.',
+    specs: '120cm Leather Strap · Silver Auto Buckle'
   },
   {
     id: 'tez-fa-06',
     name: 'BINBOND Men Silver Quartz Steel Watch',
     category: 'Fashion',
-    price: 36386,
-    image: './assets/products/sneakers.jpg',
-    description: 'Classic silver stainless steel band quartz wristwatch suitable for lectures and presentations.',
-    specs: 'Quartz Movement · Silver Steel Band'
+    price: 36385,
+    image: './assets/products/watch-silver.webp',
+    description: 'Classic silver stainless steel wristwatch with date window and luminous hands for lectures and presentations.',
+    specs: 'Quartz Movement · Stainless Steel Band'
   },
   {
     id: 'tez-fa-07',
     name: 'ASHION Men Breathable Canvas Lace-Up Shoes',
     category: 'Fashion',
-    price: 39893,
-    image: './assets/products/sneakers.jpg',
-    description: 'Casual lace-up canvas sneakers available in sizes 39–48 for lightweight everyday wear.',
-    specs: 'Sizes 39–48 · Breathable Canvas'
+    price: 39890,
+    image: './assets/products/canvas-shoes.jpg',
+    description: 'Navy-blue low-top canvas lace-up sneakers with vulcanized white rubber soles for lightweight everyday wear.',
+    specs: 'Sizes 39–45 · Navy Breathable Canvas'
   },
   {
     id: 'tez-fa-08',
-    name: 'Bekia Women Breathable Casual Sports Sneakers',
+    name: 'Bekia Breathable Casual Sports Sneakers',
     category: 'Fashion',
-    price: 21900,
-    image: './assets/products/sneakers.jpg',
-    description: 'Lightweight women’s casual walking and sports sneakers with breathable upper.',
-    specs: 'Women · Breathable Casual'
+    price: 27500,
+    image: './assets/products/sneakers-women-sport.webp',
+    description: 'Lightweight off-white and red casual running and walking sneakers with breathable mesh upper.',
+    specs: 'Breathable Mesh · Cushioned Sole'
   },
   {
     id: 'tez-fa-09',
-    name: 'Fuxing Women Everyday Casual Sneakers',
+    name: 'Fuxing Everyday White Gum-Sole Sneakers',
     category: 'Fashion',
-    price: 16887,
-    image: './assets/products/sneakers.jpg',
-    description: 'Simple, affordable women’s everyday lace-up sneakers for campus and errands.',
-    specs: 'Women · Lightweight Sole'
+    price: 29500,
+    image: './assets/products/sneakers-only.jpg',
+    description: 'Versatile white low-top casual sneakers with classic gum rubber outsole for campus and errands.',
+    specs: 'White / Gum Sole · Lace-Up'
   },
   {
     id: 'tez-fa-10',
     name: 'Sport Fashion All-Black Sculpted Sneakers',
     category: 'Fashion',
     price: 45000,
-    image: './assets/products/sneakers.jpg',
-    description: 'Minimalist all-black sculpted athletic sneakers that pair easily with casual outfits.',
-    specs: 'All-Black · Sculpted Outsole'
+    image: './assets/products/sneakers-allblack.jpg',
+    description: 'Minimalist all-black knitted athletic running sneakers with shock-absorbing sculpted midsole.',
+    specs: 'All-Black · Knitted Mesh · Sculpted Sole'
   },
   {
     id: 'tez-fa-11',
     name: 'Denggao 14.5-Inch School Backpack Rucksack',
     category: 'Fashion',
-    price: 75000,
+    price: 65000,
     image: './assets/products/backpack.jpg',
-    description: 'Durable 14.5-inch leisure and school rucksack sized for laptops, notebooks, and daily essentials.',
+    description: 'Durable 14.5-inch leisure and university rucksack with dual side bottle pockets and padded shoulder straps.',
     specs: '14.5-Inch Fit · Padded Straps'
   },
   {
     id: 'tez-fa-12',
-    name: 'STY Ladies Black Oxford Cloth Backpack',
+    name: 'STY Ladies Faux-Leather Daypack Backpack',
     category: 'Fashion',
-    price: 29992,
-    image: './assets/products/backpack.jpg',
-    description: 'Compact women’s black Oxford cloth rucksack ideal for notebooks, tablet, and personal items.',
-    specs: 'Oxford Cloth · Black · Ladies'
+    price: 29990,
+    image: './assets/products/backpack-ladies.webp',
+    description: 'Compact women’s structured daypack backpack ideal for notebooks, tablet, umbrella, and personal essentials.',
+    specs: 'Compact Daypack · Adjustable Straps'
   },
   {
     id: 'tez-fa-13',
-    name: 'Mateamoda Men Automatic Buckle Belt',
+    name: 'Mateamoda Men Ratchet Automatic Buckle Belt',
     category: 'Fashion',
     price: 20000,
-    image: './assets/products/sneakers.jpg',
-    description: 'Versatile black men’s dress and casual belt with smooth ratchet automatic buckle.',
-    specs: 'Adjustable Ratchet Buckle · Men'
+    image: './assets/products/belt-ratchet.jpg',
+    description: 'Versatile black men’s formal and casual belt with micro-adjustable ratchet track and quick-release lever.',
+    specs: 'Ratchet Track Buckle · Men'
   },
   {
     id: 'tez-fa-14',
-    name: 'Unisex Frameless Mirrored Sunglasses',
+    name: 'Unisex UV400 Black Fashion Sunglasses',
     category: 'Fashion',
     price: 15000,
-    image: './assets/products/sneakers.jpg',
-    description: 'Lightweight frameless sunglasses with black mirrored PC lenses for sunny campus walks.',
-    specs: 'PC Lenses · Unisex'
+    image: './assets/products/sunglasses-mirrored.webp',
+    description: 'Lightweight UV400 dark-tinted sunglasses for sunny campus walks between Seeta and Mukono.',
+    specs: 'UV400 Lenses · Unisex Frame'
   },
   {
     id: 'tez-fa-15',
-    name: 'Photochromic Anti-Blue Light Outdoor Glasses',
+    name: 'Photochromic Anti-Blue Light Computer Glasses',
     category: 'Fashion',
     price: 10600,
-    image: './assets/products/sneakers.jpg',
-    description: 'Dual-use UV protection and anti-blue-light glasses suited for screen study and outdoor sun.',
+    image: './assets/products/glasses-bluelight.webp',
+    description: 'Dual-use anti-blue-light and UV photochromic glasses designed for laptop study sessions and outdoor sun.',
     specs: 'Photochromic · Anti-Blue Light + UV'
   },
 
   // ===========================================================================
-  // 3. PERSONAL CARE (15 products)
+  // 3. PERSONAL CARE (15 products — Jumia Uganda current UGX prices)
   // ===========================================================================
   {
     id: 'tez-pc-01',
-    name: 'Vaseline Lip Therapy Original 20g',
+    name: 'Vaseline Lip Therapy Original Tin 20g',
     category: 'Personal Care',
     price: 6800,
-    image: './assets/products/skincare.jpg',
-    description: 'Compact 20g pocket tin of original petroleum lip balm to lock in moisture.',
-    specs: '20g Tin · Original Formula'
+    image: './assets/products/vaseline-lip-tin.jpg',
+    description: 'Compact 20g blue pocket tin of original Vaseline petroleum lip balm to soothe and lock in lip moisture.',
+    specs: '20g Pocket Tin · Original Formula'
   },
   {
     id: 'tez-pc-02',
     name: 'Vaseline Daily Brightening Body Oil 200ml',
     category: 'Personal Care',
     price: 32200,
-    image: './assets/products/skincare.jpg',
-    description: 'Fast-absorbing 200ml body oil formulated to nourish and brighten dry skin.',
-    specs: '200ml Bottle · Daily Brightening'
+    image: './assets/products/body-oil-brightening.jpg',
+    description: 'Fast-absorbing 200ml golden body oil formulated to nourish, soften, and brighten dry skin.',
+    specs: '200ml Pump Bottle · Daily Brightening'
   },
   {
     id: 'tez-pc-03',
-    name: 'Vaseline Calm Healing Body Oil 200ml',
+    name: 'Vaseline Calm Healing Body Gel Oil 200ml',
     category: 'Personal Care',
     price: 30800,
-    image: './assets/products/skincare.jpg',
-    description: 'Soothing 200ml body oil enriched with lavender and restorative moisture.',
-    specs: '200ml Bottle · Calm Healing'
+    image: './assets/products/body-oil.jpg',
+    description: 'Soothing 200ml body oil dispenser enriched with restorative moisture for smooth, glowing skin.',
+    specs: '200ml Dispenser · Restorative Moisture'
   },
   {
     id: 'tez-pc-04',
-    name: 'Vaseline Lip Therapy Rosy Lips Stick 4.8g',
+    name: 'Vaseline Lip Therapy Rosy Tinted Stick 4.8g',
     category: 'Personal Care',
-    price: 27000,
-    image: './assets/products/skincare.jpg',
-    description: 'Tinted Rosy Lips moisturizing stick balm for everyday pocket carry.',
-    specs: '4.8g Stick · Rosy Lips'
+    price: 22000,
+    image: './assets/products/lip-balm-rosy.webp',
+    description: 'Tinted Rosy Lips moisturizing stick balm for everyday pocket carry and soft natural shine.',
+    specs: '4.8g Twist Stick · Rosy Tint'
   },
   {
     id: 'tez-pc-05',
-    name: 'Vaseline Gluta-Hya Serum Burst Lotion 330ml',
+    name: 'Raw Shea Deep Hydration Body Cream 150ml',
     category: 'Personal Care',
-    price: 65000,
-    image: './assets/products/skincare.jpg',
-    description: 'Lightweight dewy radiance serum lotion with Gluta-Hya hydration complex.',
-    specs: '330ml · Dewy Radiance'
+    price: 35100,
+    image: './assets/products/cream-jar.jpg',
+    description: 'Rich whipped shea butter body cream in a wide-mouth jar for elbows, knees, and dry skin relief.',
+    specs: '150ml Jar · Raw Shea Butter'
   },
   {
     id: 'tez-pc-06',
-    name: 'Vaseline Lip Therapy Cherry Blush Stick 4.8g',
+    name: 'Olay Ultra Moisture Shea Butter Body Wash 500ml',
     category: 'Personal Care',
-    price: 22000,
-    image: './assets/products/skincare.jpg',
-    description: 'Cherry-scented moisturizing lip balm stick with a subtle tint.',
-    specs: '4.8g Stick · Cherry Blush'
+    price: 40000,
+    image: './assets/products/body-wash.webp',
+    description: 'Creamy moisturizing liquid shower gel and body wash infused with shea butter and vitamin B3.',
+    specs: '500ml Bottle · Shea Butter Body Wash'
   },
   {
     id: 'tez-pc-07',
-    name: 'Vaseline Original Petroleum Jelly 95ml',
+    name: 'Vaseline Original Pure Petroleum Jelly 100ml',
     category: 'Personal Care',
-    price: 23750,
-    image: './assets/products/skincare.jpg',
-    description: 'Triple-purified 95ml petroleum jelly jar for skin protection and dry patches.',
-    specs: '95ml Jar · Triple Purified'
+    price: 15750,
+    image: './assets/products/vaseline-jelly.jpg',
+    description: 'Triple-purified 100ml Vaseline Original petroleum jelly jar with flip-top cap for whole-body skin protection.',
+    specs: '100ml Jar · 100% Pure Petroleum Jelly'
   },
   {
     id: 'tez-pc-08',
-    name: 'Vaseline Cocoa Glow Dry Skin Lotion 400ml',
+    name: 'Vaseline Cocoa Butter Deep Moisture Lotion 400ml',
     category: 'Personal Care',
-    price: 55680,
-    image: './assets/products/skincare.jpg',
-    description: 'Rich cocoa butter body lotion in a 400ml bottle for deep daily skin moisture.',
-    specs: '400ml · Cocoa Glow'
+    price: 35100,
+    image: './assets/products/lotion-cocoaglow.jpg',
+    description: 'Rich cocoa butter and vitamin E body lotion in a 400ml pump bottle for glowing, hydrated skin.',
+    specs: '400ml Pump · Cocoa Butter & Vitamin E'
   },
   {
     id: 'tez-pc-09',
-    name: 'NIVEA Maximum Hydration Body Lotion 400ml',
+    name: 'NIVEA Intense Hydration Aloe Body Lotion 400ml',
     category: 'Personal Care',
     price: 30000,
-    image: './assets/products/skincare.jpg',
-    description: 'NIVEA Men Maximum Hydration 400ml lotion enriched with aloe vera for dry skin.',
-    specs: '400ml · Blue Bottle'
+    image: './assets/products/nivea-hydration.jpg',
+    description: 'NIVEA 400ml deep moisture serum body lotion enriched with aloe vera for 48-hour dry skin hydration.',
+    specs: '400ml Pump Bottle · Deep Moisture Serum'
   },
   {
     id: 'tez-pc-10',
-    name: 'NIVEA Repair & Care 72H Body Lotion',
+    name: 'Natural Unstoppable Solid Deodorant Stick 75g',
     category: 'Personal Care',
-    price: 69000,
-    image: './assets/products/skincare.jpg',
-    description: 'Intensive 72-hour relief body lotion formulated for very dry and tight skin.',
-    specs: '72H Moisture · Repair & Care'
+    price: 16000,
+    image: './assets/products/deodorant-stick.jpg',
+    description: 'Gentle aluminum-free solid deodorant stick providing clean all-day underarm odour protection.',
+    specs: '75g Twist Stick · All-Day Fresh'
   },
   {
     id: 'tez-pc-11',
-    name: 'NIVEA Men Revitalizing Body Lotion 400ml',
+    name: 'Vaseline Men Body & Face Revitalizing Lotion 400ml',
     category: 'Personal Care',
     price: 30000,
-    image: './assets/products/skincare.jpg',
-    description: 'Refreshing 400ml daily body lotion designed for men’s normal to dry skin.',
-    specs: '400ml · Men Revitalizing',
+    image: './assets/products/lotion-men.webp',
+    description: 'Fast-absorbing non-greasy 400ml daily body and face lotion formulated for men’s skin.',
+    specs: '400ml · Men Body & Face Lotion',
     featured: true
   },
   {
     id: 'tez-pc-12',
-    name: 'NIVEA Fresh Natural Anti-Perspirant Spray 150ml',
+    name: 'Fresh Aloe & Mint 48H Anti-Perspirant Spray 150ml',
     category: 'Personal Care',
     price: 14300,
-    image: './assets/products/skincare.jpg',
-    description: '48-hour gentle ocean-extract anti-perspirant deodorant spray for women.',
-    specs: '150ml Spray · 48h Protection'
+    image: './assets/products/deodorant-spray.jpg',
+    description: '48-hour refreshing aloe vera and mint anti-perspirant deodorant body spray can.',
+    specs: '150ml Aerosol Spray · 48h Protection'
   },
   {
     id: 'tez-pc-13',
-    name: 'Colgate Herbal Toothpaste 150g',
+    name: 'Colgate Herbal Mint Fluoride Toothpaste 150g',
     category: 'Personal Care',
     price: 12000,
-    image: './assets/products/skincare.jpg',
-    description: 'Family-size 150g herbal fluoride toothpaste combining natural herb extracts and calcium.',
-    specs: '150g Tube · Herbal'
+    image: './assets/products/toothpaste-herbal.jpg',
+    description: 'Family-size 150g herbal mint fluoride toothpaste combining natural herb extracts for cavity protection.',
+    specs: '150g Tube + Box · Herbal Mint'
   },
   {
     id: 'tez-pc-14',
-    name: 'Colgate Herbal Toothpaste 70g',
+    name: 'Herbal Mint Fluoride Toothpaste Compact 70g',
     category: 'Personal Care',
     price: 9000,
-    image: './assets/products/skincare.jpg',
-    description: 'Compact 70g tube of Colgate Herbal toothpaste ideal for hostel bathrooms and travel.',
-    specs: '70g Tube · Herbal'
+    image: './assets/products/toothpaste-compact.jpg',
+    description: 'Compact tube of herbal mint fluoride toothpaste ideal for hostel washbags and travel.',
+    specs: 'Compact Tube · Fresh Mint'
   },
   {
     id: 'tez-pc-15',
-    name: 'Lux Fresh Glow Bathing Soap 128g',
+    name: 'Lux Fresh Glow & Soften Bathing Soap 128g',
     category: 'Personal Care',
     price: 4500,
-    image: './assets/products/skincare.jpg',
-    description: 'Fragrant 128g everyday bathing bar soap for fresh daily cleansing.',
-    specs: '128g Bar · Fresh Glow'
+    image: './assets/products/soap-lux.jpg',
+    description: 'Fragrant pink beauty bathing bar soap formulated to leave skin soft and delicately scented.',
+    specs: '128g Beauty Bar · Pink Floral'
   },
 
   // ===========================================================================
-  // 4. KITCHEN TOOLS (15 products)
+  // 4. KITCHEN TOOLS (15 products — Jumia Uganda current UGX prices)
   // ===========================================================================
   {
     id: 'tez-kt-01',
     name: 'Panda 2L Stainless Steel Electric Kettle',
     category: 'Kitchen Tools',
-    price: 20983,
+    price: 20980,
     image: './assets/products/kettle.jpg',
-    description: 'Fast-boiling 2.0L stainless steel cordless electric kettle with auto shut-off.',
-    specs: '2.0 Liters · Stainless Steel · Blue Accent',
+    description: 'Fast-boiling 2.0L brushed stainless steel cordless electric kettle with water-level window and auto shut-off.',
+    specs: '2.0 Liters · 1500W · Auto Shut-Off',
     featured: true
   },
   {
     id: 'tez-kt-02',
-    name: 'Pixel 2.5L Fast Boiling Electric Kettle',
+    name: 'Stainless Steel Cooking Pot with Tempered Glass Lid',
     category: 'Kitchen Tools',
-    price: 31500,
-    image: './assets/products/kettle.jpg',
-    description: 'Generous 2.5L electric kettle/percolator in rose gold finish for hostel tea and coffee.',
-    specs: '2.5 Liters · Rose Gold Finish'
+    price: 45000,
+    image: './assets/products/cooking-pot.webp',
+    description: 'Durable polished stainless steel two-handle cooking pot with vented glass lid for rice, stews, and pasta.',
+    specs: 'Stainless Steel · Vented Glass Lid'
   },
   {
     id: 'tez-kt-03',
-    name: '26cm Black Non-Stick Frying Pan',
+    name: '26cm Black Non-Stick Frying Skillet Pan',
     category: 'Kitchen Tools',
     price: 18500,
-    image: './assets/products/cookware.jpg',
-    description: 'Everyday 26cm non-stick skillet pan suited for eggs, pancakes, and quick student meals.',
+    image: './assets/products/frying-pan-single.webp',
+    description: 'Everyday 26cm non-stick frying pan with cool-touch handle for eggs, chapati, pancakes, and quick student meals.',
     specs: '26cm Diameter · Non-Stick Coating'
   },
   {
     id: 'tez-kt-04',
-    name: '3-Piece Non-Stick Frying Pan Set (20/22/24cm)',
+    name: 'Heavy-Duty Deep Non-Stick Chef Frying Pan',
     category: 'Kitchen Tools',
-    price: 67500,
-    image: './assets/products/cookware.jpg',
-    description: 'Nested 3-piece non-stick black frying pan set covering small, medium, and family portions.',
-    specs: '20cm, 22cm, 24cm · Black Non-Stick'
+    price: 38000,
+    image: './assets/products/frying-pan-black.jpg',
+    description: 'Thick-base anodized black non-stick skillet with riveted stainless steel handle for even heat distribution.',
+    specs: 'Deep Wall · Riveted Steel Handle'
   },
   {
     id: 'tez-kt-05',
-    name: 'Pixel 1.5L 2-in-1 Blender with Grinder',
+    name: 'Pixel 1.5L 2-in-1 Countertop Blender with Grinder',
     category: 'Kitchen Tools',
     price: 44800,
-    image: './assets/products/kettle.jpg',
-    description: '1.5L countertop fruit blender paired with a dry spice/coffee mill grinder attachment.',
-    specs: '1.5L Jar · 2-in-1 Blender + Mill'
+    image: './assets/products/blender-2in1.webp',
+    description: '1.5L multi-speed countertop fruit smoothie blender with pulse function for hostel and home kitchens.',
+    specs: '1.5L Jar · Multi-Speed + Pulse'
   },
   {
     id: 'tez-kt-06',
-    name: 'ADH 2-in-1 Unbreakable Jar Blender',
+    name: 'Electric Hand Immersion Stick Blender',
     category: 'Kitchen Tools',
     price: 49900,
-    image: './assets/products/kettle.jpg',
-    description: 'Durable 2-in-1 kitchen blender featuring a shatter-resistant unbreakable jar.',
-    specs: '2-in-1 · Unbreakable Jar · White/Green'
+    image: './assets/products/blender-unbreakable.webp',
+    description: 'Compact handheld electric immersion blender with stainless steel blades for soups, smoothies, and sauces.',
+    specs: 'Handheld Stick Blender · Stainless Blade'
   },
   {
     id: 'tez-kt-07',
-    name: '6-Piece Kitchen Knife Set with Wooden Board',
+    name: 'Stainless Kitchen Knife Set with Wooden Chopping Board',
     category: 'Kitchen Tools',
     price: 25000,
-    image: './assets/products/cookware.jpg',
-    description: 'Complete starter prep set containing stainless kitchen knives and a wooden chopping board.',
-    specs: '6 Pieces + Wooden Board'
+    image: './assets/products/knife-board-set.jpg',
+    description: 'Complete starter prep set containing 3 stainless steel kitchen knives and a thick hardwood chopping board.',
+    specs: '3 Stainless Knives + Hardwood Board'
   },
   {
     id: 'tez-kt-08',
-    name: '3-Piece Plastic Cutting Chopping Board Set',
+    name: 'Natural Bamboo Kitchen Cutting & Chopping Board',
     category: 'Kitchen Tools',
-    price: 40000,
-    image: './assets/products/cookware.jpg',
-    description: 'Easy-wash 3-piece white plastic chopping board set for separating vegetables and meats.',
-    specs: '3 Sizes · Easy-Clean Plastic'
+    price: 22000,
+    image: './assets/products/chopping-boards.webp',
+    description: 'Easy-clean rectangular bamboo chopping board with carry handle cutout for vegetables, fruits, and meat.',
+    specs: 'Thick Bamboo · Juice Groove & Handle'
   },
   {
     id: 'tez-kt-09',
-    name: 'Tankoo 3.2L Double-Wall Hot & Cold Flask',
+    name: 'Tankoo 3.0L Double-Wall Hot & Cold Vacuum Flask',
     category: 'Kitchen Tools',
-    price: 22400,
-    image: './assets/products/kettle.jpg',
-    description: 'Large 3.2L insulated vacuum flask designed to keep water or tea hot for hours.',
-    specs: '3.2 Liters · Double-Wall Vacuum'
+    price: 28500,
+    image: './assets/products/vacuum-flask-3l.jpg',
+    description: 'Large 3.0L insulated stainless steel vacuum thermos flask with press-lever pour spout to keep tea or water hot all day.',
+    specs: '3.0 Liters · Press Pour · 24H Hot/Cold'
   },
   {
     id: 'tez-kt-10',
     name: 'Sundabest 3L Unbreakable Stainless Vacuum Flask',
     category: 'Kitchen Tools',
-    price: 37000,
-    image: './assets/products/kettle.jpg',
-    description: 'Heavy-duty 3L stainless steel vacuum flask in silver for dorms and shared kitchens.',
-    specs: '3.0 Liters · Stainless Steel · Silver'
+    price: 60000,
+    image: './assets/products/flask-stainless.jpg',
+    description: 'Heavy-duty 3.0L unbreakable brushed stainless steel thermal airpot flask for hostels and shared kitchens.',
+    specs: '3.0 Liters · Unbreakable Stainless Steel'
   },
   {
     id: 'tez-kt-11',
-    name: '6-Piece Ceramic Dinner Plates Set',
+    name: '6-Piece Glazed Ceramic Dinner Plates Set',
     category: 'Kitchen Tools',
-    price: 85000,
-    image: './assets/products/cookware.jpg',
-    description: 'Set of 6 sturdy ceramic dinner plates suitable for daily meals and hosting guests.',
-    specs: '6 Plates · Ceramic'
+    price: 27000,
+    image: './assets/products/dinner-plates.webp',
+    description: 'Set of 6 sturdy rimmed ceramic dinner plates suitable for daily meals and microwave reheating.',
+    specs: '6 Plates · Microwave-Safe Ceramic'
   },
   {
     id: 'tez-kt-12',
     name: '24-Piece Black Line Plates, Bowls & Cups Set',
     category: 'Kitchen Tools',
     price: 72000,
-    image: './assets/products/cookware.jpg',
-    description: 'Coordinated 24-piece minimalist black-line dinnerware set with plates, bowls, and cups.',
+    image: './assets/products/dinnerware-24pc.jpg',
+    description: 'Coordinated 24-piece minimalist black-rim ceramic dinnerware set including dinner plates, side plates, soup bowls, and cups.',
     specs: '24 Pieces · Minimalist Black Line'
   },
   {
     id: 'tez-kt-13',
-    name: '36-Piece Black Line Complete Dinnerware Set',
+    name: '36-Piece Black Line Complete Dinnerware & Tea Set',
     category: 'Kitchen Tools',
-    price: 70000,
-    image: './assets/products/cookware.jpg',
-    description: '36-piece set with 6 plates, 6 cups, 6 saucers, 6 side dishes, 6 forks, and 6 spoons.',
-    specs: '36 Pieces · Service for 6'
+    price: 95000,
+    image: './assets/products/dinnerware-36pc.jpg',
+    description: 'Complete 36-piece dining and tea service with plates, bowls, cups, saucers, teapot, and matte black cutlery.',
+    specs: '36 Pieces · Complete Service for 6'
   },
   {
     id: 'tez-kt-14',
-    name: '5-Piece Food Storage Container Set with Lids',
+    name: '5-Piece Airtight Clear Food Storage Container Set',
     category: 'Kitchen Tools',
     price: 44635,
-    image: './assets/products/cookware.jpg',
-    description: '5-piece nesting kitchen storage container set with tight lids for fruits, leftovers, and dry goods.',
-    specs: '5 Containers + Lids'
+    image: './assets/products/food-containers-clear.jpg',
+    description: '5-piece nesting BPA-free clear pantry and fridge storage containers (0.4L to 4.0L) with silicone-seal locking lids.',
+    specs: '5 Sizes (0.4L–4.0L) · Locking Lids'
   },
   {
     id: 'tez-kt-15',
-    name: '5-Set Multi-Colour Plastic Food Containers',
+    name: 'Stackable Insulated Multi-Tier Food Lunch Box',
     category: 'Kitchen Tools',
-    price: 40000,
-    image: './assets/products/cookware.jpg',
-    description: 'Stackable set of 5 plastic food storage bowls with colour-coded snap lids.',
-    specs: '5-Piece Set · Snap Lids'
+    price: 32000,
+    image: './assets/products/food-containers-color.webp',
+    description: 'Leak-resistant multi-compartment insulated lunch container with snap latches for carrying warm meals to campus.',
+    specs: 'Multi-Layer · Snap Latches'
   },
 
   // ===========================================================================
-  // 5. STATIONERY (15 products)
+  // 5. STATIONERY (15 products — Jumia Uganda current UGX prices)
   // ===========================================================================
   {
     id: 'tez-st-01',
     name: 'Picfare Exercise Books 96 Pages (Dozen of 12)',
     category: 'Stationery',
     price: 19500,
-    image: './assets/products/stationery.jpg',
-    description: 'Dozen pack of 12 standard blue Picfare 96-page exercise books for lecture notes.',
+    image: './assets/products/exercise-books-blue.jpg',
+    description: 'Dozen pack of 12 standard blue-cover 96-page ruled school exercise books for lecture notes and assignments.',
     specs: '12 Books · 96 Pages · Blue Cover',
     badge: '12-Pack',
     featured: true
   },
   {
     id: 'tez-st-02',
-    name: 'A4 96-Page Exercise Books (12 Pieces)',
+    name: 'A4 Spiral Ruled Study Notebooks & Gel Pens (2-Pack)',
     category: 'Stationery',
     price: 26550,
-    image: './assets/products/stationery.jpg',
-    description: 'Full-size A4 ruled exercise books packed in a dozen of 12 for university coursework.',
-    specs: 'A4 Size · 12 Books · 96 Pages'
+    image: './assets/products/exercise-notebooks.jpg',
+    description: 'Twin pack of twin-wire spiral hardcover A4 study notebooks paired with smooth-writing black gel pens.',
+    specs: '2 Spiral Books + 2 Gel Pens · A4'
   },
   {
     id: 'tez-st-03',
-    name: 'King A5 Exercise Books (2 Dozens / 24 Pieces)',
+    name: 'Stabilo Pastel Chisel-Tip Highlighters (4-Pack)',
     category: 'Stationery',
-    price: 28500,
-    image: './assets/products/stationery.jpg',
-    description: 'Bulk 24-piece pack of compact A5 exercise books for daily rough notes and quizzes.',
-    specs: 'A5 Size · 24 Books'
+    price: 14500,
+    image: './assets/products/markers-set.jpg',
+    description: 'Set of 4 anti-dry-out pastel chisel-tip highlighters (yellow, pink, blue, green) for marking revision notes.',
+    specs: '4 Highlighters · Pastel Assorted'
   },
   {
     id: 'tez-st-04',
-    name: 'Picfare Champion A4 96-Page Books (12-Pack)',
+    name: 'Complete Campus Study Desk Stationery Bundle',
     category: 'Stationery',
-    price: 31500,
+    price: 48000,
     image: './assets/products/stationery.jpg',
-    description: 'Picfare Champion A4 96-page crisp ruled notebooks bundled in a 12-book pack.',
-    specs: 'A4 Size · 12 Books · 96 Pages'
+    description: 'All-in-one semester starter bundle with spiral notebooks, highlighters, pens, and scientific calculator.',
+    specs: 'Notebooks + Highlighters + Pens + Calculator'
   },
   {
     id: 'tez-st-05',
-    name: 'A4 4-Quire Hardcover Counter Books (6 Pieces)',
+    name: 'Exercise Books & Hardcover Counter Books Combo',
     category: 'Stationery',
-    price: 41800,
-    image: './assets/products/stationery.jpg',
-    description: '6-pack of thick A4 4-quire hardcover counter books built to last an entire semester.',
-    specs: 'A4 · 4-Quire · 6 Books'
+    price: 70200,
+    image: './assets/products/counter-books-6pk.jpg',
+    description: 'Full semester pack combining a dozen blue 96-page exercise books with 3 A4 hardcover counter books.',
+    specs: '12 Exercise Books + 3 Counter Books'
   },
   {
     id: 'tez-st-06',
-    name: 'A4 Black 4-Quire 384-Page Counter Books (4-Pack)',
+    name: 'A4 Black Hardcover Record / Counter Books (3-Pack)',
     category: 'Stationery',
     price: 35625,
-    image: './assets/products/stationery.jpg',
-    description: 'Pack of 4 black hardcover 384-page counter books with durable stitched binding.',
-    specs: '384 Pages · 4-Quire · 4 Books'
+    image: './assets/products/counter-books-black.jpg',
+    description: 'Pack of 3 thick A4 black hardcover 200-page counter books with reinforced red-and-black spine binding.',
+    specs: 'A4 Size · 200 Pages · 3 Hardcover Books'
   },
   {
     id: 'tez-st-07',
     name: 'Bic Ballpoint Blue Pens (Box of 50)',
     category: 'Stationery',
     price: 31950,
-    image: './assets/products/stationery.jpg',
-    description: 'Full box of 50 smooth-writing blue ballpoint pens ideal for exams and study groups.',
-    specs: '50 Pens · Blue Ink',
+    image: './assets/products/bic-pens-box50.jpg',
+    description: 'Full wholesale box of 50 smooth-writing blue ballpoint pens with bonus whiteboard marker and ruler.',
+    specs: '50 Pens · Blue Ink · Box Pack',
     badge: 'Box of 50'
   },
   {
     id: 'tez-st-08',
-    name: 'Bic Cristal Original Blue Pens (50-Pack)',
+    name: 'Bic Cristal Original Medium Blue Pens (50-Pack)',
     category: 'Stationery',
     price: 36500,
-    image: './assets/products/stationery.jpg',
-    description: 'Classic transparent hexagonal Bic Cristal Original blue ballpoint pens in a 50-count box.',
+    image: './assets/products/bic-cristal-50pk.jpg',
+    description: 'Classic transparent hexagonal Bic Cristal 1.0mm blue ballpoint pens in a 50-count study pack.',
     specs: '50 Pens · Medium 1.0mm · Blue'
   },
   {
     id: 'tez-st-09',
-    name: 'Bic Whiteboard Marker (Red)',
+    name: 'Bic Dry-Erase Red Whiteboard Marker & Ruler Set',
     category: 'Stationery',
-    price: 4080,
-    image: './assets/products/stationery.jpg',
-    description: 'Dry-erase red whiteboard marker for seminar presentations and study boards.',
-    specs: 'Dry Erase · Red Ink'
+    price: 6500,
+    image: './assets/products/whiteboard-marker-red.jpg',
+    description: 'Bold red dry-erase whiteboard marker paired with a clear 30cm metric ruler for seminars and diagrams.',
+    specs: 'Dry-Erase Red Marker + 30cm Ruler'
   },
   {
     id: 'tez-st-10',
-    name: '12-Digit Solar LCD Desktop Calculator',
+    name: '12-Digit Solar & Battery LCD Desktop Calculator',
     category: 'Stationery',
     price: 21995,
-    image: './assets/products/stationery.jpg',
-    description: 'Large-button 12-digit solar and battery powered calculator for accounting and coursework.',
+    image: './assets/products/calculator-desktop.jpg',
+    description: 'Large-button 12-digit dual-power solar and battery calculator for accounting, business, and finance units.',
     specs: '12 Digits · Solar + Battery · Black'
   },
   {
     id: 'tez-st-11',
-    name: 'Student Multifunctional Scientific Calculator',
+    name: 'Casio Natural-V.P.A.M. Student Scientific Calculator',
     category: 'Stationery',
-    price: 18900,
-    image: './assets/products/stationery.jpg',
-    description: 'Portable 12-digit 2-line scientific calculator for engineering, maths, and science units.',
-    specs: 'Scientific · 12-Digit Display'
+    price: 26700,
+    image: './assets/products/calculator-scientific.jpg',
+    description: 'Multi-function 2-line textbook-display scientific calculator for engineering, statistics, and mathematics exams.',
+    specs: 'Scientific · Natural Textbook Display'
   },
   {
     id: 'tez-st-12',
-    name: '30cm / 12-Inch Plastic School Rulers (6-Pack)',
+    name: '30cm / 12-Inch Clear Plastic School Rulers (6-Pack)',
     category: 'Stationery',
-    price: 3000,
-    image: './assets/products/stationery.jpg',
-    description: 'Set of 6 clear 30cm metric and inch rulers for diagrams, charts, and assignments.',
-    specs: '30cm / 12" · 6 Pieces'
+    price: 8750,
+    image: './assets/products/rulers-6pk.jpg',
+    description: 'Set of shatter-resistant clear 30cm metric and inch rulers for technical drawing and coursework.',
+    specs: '30cm / 12" · Clear Metric & Inch'
   },
   {
     id: 'tez-st-13',
-    name: 'A4 PU Conference Portfolio Folder with Calculator',
+    name: 'A4 PU Leather Zippered Conference Folder with Calculator',
     category: 'Stationery',
     price: 94500,
-    image: './assets/products/stationery.jpg',
-    description: 'Black PU leather A4 zippered conference folder with built-in calculator and notepad slot.',
-    specs: 'A4 · PU Leather · Integrated Calculator'
+    image: './assets/products/portfolio-calculator.jpg',
+    description: 'Black PU leather A4 zippered conference portfolio with built-in 12-digit solar calculator, pen loop, card slots, and ruled pad.',
+    specs: 'A4 · Zippered PU Leather · Built-in Calculator'
   },
   {
     id: 'tez-st-14',
-    name: 'Executive Portfolio Padfolio Document Folder',
+    name: 'Executive Conference Padfolio + A4 Copy Paper Combo',
     category: 'Stationery',
-    price: 287000,
-    image: './assets/products/stationery.jpg',
-    description: 'Structured padfolio document organizer for final-year presentations, CVs, and internships.',
-    specs: 'Padfolio · Multi-Pocket Organizer'
+    price: 195000,
+    image: './assets/products/padfolio-folder.jpg',
+    description: 'Final-year dissertation and internship combo featuring an executive calculator portfolio folder and a 5-ream A4 paper carton.',
+    specs: 'A4 Portfolio Folder + 5-Ream Paper Carton'
   },
   {
     id: 'tez-st-15',
-    name: 'P1 Bright White A4 500-Sheet Paper (5-Ream Carton)',
+    name: 'Premium A4 80gsm 500-Sheet Copy Paper (5-Ream Carton)',
     category: 'Stationery',
     price: 120000,
-    image: './assets/products/stationery.jpg',
-    description: 'Bulk carton of 5 reams (2,500 sheets) bright white A4 paper for dissertation and printing.',
-    specs: '5 Reams × 500 Sheets · A4 White'
+    image: './assets/products/a4-paper-carton.jpg',
+    description: 'Bulk carton of 5 reams (2,500 sheets) bright white 80gsm A4 multipurpose paper for printing and photocopying.',
+    specs: '5 Reams × 500 Sheets · 80gsm A4 White'
   },
 
   // ===========================================================================
-  // 6. GROCERIES (15 products)
+  // 6. GROCERIES (15 products — Jumia Uganda current UGX prices)
   // ===========================================================================
   {
     id: 'tez-gr-01',
-    name: 'SWT Delight Long Grain Rice 5kg',
+    name: 'SWT Delight Long Grain White Rice 5kg',
     category: 'Groceries',
-    price: 24900,
-    image: './assets/products/groceries.jpg',
-    description: 'Clean, quick-cooking 5kg bag of SWT Delight white rice for hostel and home meals.',
-    specs: '5kg Bag · Long Grain Rice',
+    price: 23550,
+    image: './assets/products/rice-super-5kg.webp',
+    description: 'Clean, stone-free, quick-cooking 5kg bag of SWT Delight long-grain white rice for hostel and family meals.',
+    specs: '5kg Bag · Long Grain White Rice',
     badge: '5kg Bag',
     featured: true
   },
   {
     id: 'tez-gr-02',
-    name: 'SWT Aromatic Rice 5kg',
+    name: 'Numa Super Aromatic White Rice 5kg',
     category: 'Groceries',
-    price: 22000,
-    image: './assets/products/groceries.jpg',
-    description: 'Fragrant 5kg bag of SWT Aromatic rice suited for pilau and everyday dishes.',
-    specs: '5kg Bag · Aromatic'
+    price: 36800,
+    image: './assets/products/rice-super-5kg.webp',
+    description: 'Premium grade Ugandan aromatic super white rice packed in a sealed 5kg household bag.',
+    specs: '5kg Bag · Super Aromatic'
   },
   {
     id: 'tez-gr-03',
-    name: 'Numa Super White Rice 5kg',
+    name: 'Oat Bakery Whole Grain Crunchy Oat Biscuits 200g',
     category: 'Groceries',
-    price: 36800,
-    image: './assets/products/groceries.jpg',
-    description: 'Premium grade Numa Super White Rice packed in a sealed 5kg household bag.',
-    specs: '5kg Bag · Super White'
+    price: 8500,
+    image: './assets/products/biscuits-pack.jpg',
+    description: 'Fibre-rich whole-grain oat breakfast biscuits with berries for quick morning energy before lectures.',
+    specs: '200g Pack · Whole Grain Oats'
   },
   {
     id: 'tez-gr-04',
-    name: 'Zhong Yi Super Rice 1kg',
+    name: 'Sunripened Pure Natural Mango Juice 500ml',
     category: 'Groceries',
     price: 6500,
-    image: './assets/products/groceries.jpg',
-    description: 'Convenient 1kg pack of Zhong Yi Super Rice for single-student cooking.',
-    specs: '1kg Pack'
+    image: './assets/products/mango-juice.jpg',
+    description: 'Chilled-ready 500ml glass bottle of pure pressed tropical mango fruit juice with no artificial sweeteners.',
+    specs: '500ml Glass Bottle · 100% Pure Mango'
   },
   {
     id: 'tez-gr-05',
-    name: 'Sunseed Sunflower Cooking Oil 5 Liters',
+    name: 'Sunseed Pure Sunflower Cooking Oil 5 Liters',
     category: 'Groceries',
-    price: 45500,
-    image: './assets/products/groceries.jpg',
-    description: 'Refined cholesterol-free 5L jerrycan of Sunseed pure sunflower cooking oil.',
-    specs: '5 Liters · Sunflower Oil'
+    price: 45300,
+    image: './assets/products/cooking-oil-bottle.webp',
+    description: 'Refined cholesterol-free pure sunflower cooking oil enriched with Vitamin A for frying and everyday cooking.',
+    specs: '5 Liters · Pure Sunflower Oil'
   },
   {
     id: 'tez-gr-06',
-    name: 'Fortune Sunflower Cooking Oil 5 Liters',
+    name: 'Fortune Refined Sunflower Cooking Oil 3 Liters',
     category: 'Groceries',
-    price: 45900,
-    image: './assets/products/groceries.jpg',
-    description: 'Light, neutral-tasting 5L Fortune sunflower oil for frying, sautéing, and baking.',
-    specs: '5 Liters · Sunflower Oil'
+    price: 28900,
+    image: './assets/products/cooking-oil-bottle.webp',
+    description: 'Light, neutral-tasting 3-liter bottle of Fortune sunflower cooking oil ideal for student kitchens.',
+    specs: '3 Liters · Refined Cooking Oil'
   },
   {
     id: 'tez-gr-07',
-    name: 'Kinyara Sweet Sugar 1kg',
+    name: 'Kinyara Sweet Brown Cane Sugar 1kg',
     category: 'Groceries',
     price: 3700,
-    image: './assets/products/groceries.jpg',
-    description: 'Locally milled 1kg bag of Kinyara brown sugar for tea, porridge, and baking.',
-    specs: '1kg Pack · Ugandan Cane Sugar'
+    image: './assets/products/sugar-kinyara-1kg.jpg',
+    description: 'Locally milled 1kg sealed pack of natural Ugandan brown cane sugar for tea, coffee, and porridge.',
+    specs: '1kg Pack · Natural Cane Sugar'
   },
   {
     id: 'tez-gr-08',
-    name: 'Lato Whole Milk Powder 400g',
+    name: 'Lato Instant Whole Milk Powder Pouch 400g',
     category: 'Groceries',
-    price: 22700,
-    image: './assets/products/groceries.jpg',
-    description: 'Instant full-cream 400g Lato powdered milk pouch—no fridge required in hostels.',
-    specs: '400g Pouch · Whole Milk Powder'
+    price: 19000,
+    image: './assets/products/milk-powder-400g.jpg',
+    description: 'Resealable 400g pouch of instant full-cream whole milk powder—stays fresh without a fridge in hostels.',
+    specs: '400g Resealable Pouch · Full Cream'
   },
   {
     id: 'tez-gr-09',
-    name: 'JESA Super Milk 200ml (Pack of 24)',
+    name: 'JESA Farm Fresh UHT Whole Milk 1 Liter',
     category: 'Groceries',
-    price: 21000,
-    image: './assets/products/groceries.jpg',
-    description: 'Carton of 24 shelf-stable 200ml JESA UHT milk packs for breakfast and tea.',
-    specs: '24 × 200ml · UHT Whole Milk'
+    price: 4500,
+    image: './assets/products/milk-uht-carton.webp',
+    description: 'Long-life 1-liter carton of farm-fresh pasteurized whole milk for breakfast cereal, tea, and coffee.',
+    specs: '1 Liter Carton · Whole Milk'
   },
   {
     id: 'tez-gr-10',
-    name: 'Nescafe Classic Instant Coffee 100g',
+    name: 'Nescafe Classic Instant Coffee Glass Jar 100g',
     category: 'Groceries',
     price: 40500,
-    image: './assets/products/groceries.jpg',
-    description: '100g jar of rich Nescafe Classic instant coffee for early lectures and late revision.',
-    specs: '100g Jar · Instant Coffee'
+    image: './assets/products/nescafe-coffee-100g.webp',
+    description: '100g glass jar of rich dark-roast Nescafe Classic instant coffee for early morning classes and late revision.',
+    specs: '100g Glass Jar · Pure Instant Coffee'
   },
   {
     id: 'tez-gr-11',
-    name: 'Kericho Gold String & Tag Tea Bags (50 pcs)',
+    name: 'Kericho Gold String & Tag Black Tea Bags (50 pcs)',
     category: 'Groceries',
     price: 18500,
-    image: './assets/products/groceries.jpg',
-    description: 'Box of 50 individually tagged Kericho Gold black tea bags for quick hot cups.',
+    image: './assets/products/tea-bags-50pk.jpg',
+    description: 'Box of 50 individually string-and-tag East African black tea bags for brisk, aromatic hot tea.',
     specs: '50 Tea Bags · String & Tag'
   },
   {
     id: 'tez-gr-12',
-    name: 'Indomie Chicken Instant Noodles 70g (5-Pack)',
+    name: 'Indomie Chicken Flavour Instant Noodles 70g (5-Pack)',
     category: 'Groceries',
     price: 4000,
-    image: './assets/products/groceries.jpg',
-    description: 'Bundle of 5 individual 70g chicken-flavour instant noodles ready in 3 minutes.',
-    specs: '5 × 70g · Chicken Flavour'
+    image: './assets/products/indomie-noodles-5pk.jpg',
+    description: 'Bundle of 5 individual 70g chicken-flavour instant noodle packs with seasoning—ready in 3 minutes.',
+    specs: '5 × 70g Packs · Chicken Flavour'
   },
   {
     id: 'tez-gr-13',
-    name: 'Santa Lucia Spaghetti 500g',
+    name: 'Santa Lucia Durum Wheat Spaghetti Pasta 500g',
     category: 'Groceries',
     price: 4000,
-    image: './assets/products/groceries.jpg',
-    description: '500g pack of durum-wheat Santa Lucia spaghetti pasta for quick hostel dinners.',
-    specs: '500g Pack · Pasta'
+    image: './assets/products/spaghetti-500g.jpg',
+    description: '500g pack of non-sticky durum-wheat spaghetti pasta for quick, filling hostel dinners.',
+    specs: '500g Pack · Durum Wheat Spaghetti'
   },
   {
     id: 'tez-gr-14',
-    name: 'JOHA Maize Flour 2kg',
+    name: 'JOHA White & Sifted Maize Flour 2kg',
     category: 'Groceries',
     price: 5000,
-    image: './assets/products/groceries.jpg',
-    description: 'Fine sifted 2kg pack of JOHA white maize flour for posho and porridge.',
-    specs: '2kg Pack · Maize Flour'
+    image: './assets/products/maize-flour-2kg.jpg',
+    description: 'Fine sifted 2kg bag of pure white maize meal flour for smooth posho (ugali) and morning porridge.',
+    specs: '2kg Bag · White Sifted Maize Flour'
   },
   {
     id: 'tez-gr-15',
-    name: 'Blue Band Smooth Peanut Butter 400g',
+    name: 'Blue Band Smooth Roasted Peanut Butter 400g',
     category: 'Groceries',
     price: 13000,
-    image: './assets/products/groceries.jpg',
-    description: 'Creamy 400g jar of Blue Band roasted peanut butter spread for bread and breakfast.',
-    specs: '400g Jar · Smooth Spread'
+    image: './assets/products/peanut-butter-400g.jpg',
+    description: 'Creamy 400g jar of protein-rich smooth roasted peanut butter spread for bread, crackers, and porridge.',
+    specs: '400g Jar · 100% Roasted Peanuts'
   },
 
   // ===========================================================================
-  // 7. HOUSEHOLD ESSENTIALS (15 products)
+  // 7. HOUSEHOLD ESSENTIALS (15 products — Jumia Uganda current UGX prices)
   // ===========================================================================
   {
     id: 'tez-hh-01',
-    name: 'Omo Hand Washing Powder',
+    name: 'Omo Hand Washing Laundry Detergent Powder 1kg',
     category: 'Household Essentials',
     price: 23500,
-    image: './assets/products/household.jpg',
-    description: 'Fast-action stain-removing Omo hand washing detergent powder for everyday laundry.',
-    specs: 'Hand Wash Detergent Powder',
+    image: './assets/products/omo-washing-powder.jpg',
+    description: 'Fast-action stain-removing 1kg hand-washing laundry detergent powder with fresh floral scent.',
+    specs: '1kg Resealable Bag · Hand Wash Powder',
     featured: true
   },
   {
     id: 'tez-hh-02',
-    name: 'Omo Lemon Bleach 700ml (2-Pack)',
+    name: '3-in-1 Concentrated Laundry Detergent Pods (42-Count)',
     category: 'Household Essentials',
-    price: 17300,
-    image: './assets/products/household.jpg',
-    description: 'Twin pack of 700ml lemon-scented household bleach for whites and bathroom sanitising.',
-    specs: '2 × 700ml · Lemon Scent'
+    price: 38000,
+    image: './assets/products/laundry-detergent.jpg',
+    description: 'Resealable pouch of 42 pre-measured 3-in-1 laundry detergent pacs for deep cleaning and fabric brightening.',
+    specs: '42 Laundry Pacs · Original Scent'
   },
   {
     id: 'tez-hh-03',
-    name: 'Mambo Toilet Paper (10-Pack)',
+    name: 'Mambo Soft 2-Ply Toilet Paper Value Pack (10 Rolls)',
     category: 'Household Essentials',
     price: 4800,
-    image: './assets/products/household.jpg',
-    description: 'Value 10-roll pack of Mambo toilet tissue for hostel rooms and apartments.',
-    specs: '10 Rolls · Value Pack'
+    image: './assets/products/toilet-paper-10pk.jpg',
+    description: 'Economical 10-roll value pack of soft 2-ply white toilet tissue rolls for hostel rooms and apartments.',
+    specs: '10 Rolls · 2-Ply Soft & Strong'
   },
   {
     id: 'tez-hh-04',
-    name: 'Toilex Poa Wrapped Toilet Paper 2-Ply (10-Pack)',
+    name: 'Toilex Ultra Comfort Mega Toilet Rolls (12-Pack)',
     category: 'Household Essentials',
-    price: 5200,
-    image: './assets/products/household.jpg',
-    description: 'Soft 2-ply wrapped Toilex Poa toilet rolls in a convenient 10-roll pack.',
-    specs: '10 Rolls · 2-Ply Wrapped'
+    price: 7600,
+    image: './assets/products/toilet-paper-pack.jpg',
+    description: 'Bulk bundle of thick, absorbent 2-ply toilet tissue rolls built to last through the semester.',
+    specs: '12 Mega Rolls · Ultra Comfort 2-Ply'
   },
   {
     id: 'tez-hh-05',
-    name: 'Rosy Wrapped Toilet Paper 2-Ply (10-Pack)',
+    name: 'Soft 2-Ply Facial Tissue Pop-Up Box (200 Sheets)',
     category: 'Household Essentials',
-    price: 7600,
-    image: './assets/products/household.jpg',
-    description: 'Individually wrapped 2-ply Rosy toilet tissue rolls packed in a 10-roll bundle.',
-    specs: '10 Rolls · 2-Ply Soft'
+    price: 6500,
+    image: './assets/products/tissue-box.webp',
+    description: 'Hygienic pop-up desk box of gentle 2-ply white facial tissues for study desks and bedside tables.',
+    specs: '200 Sheets · Pop-Up Dispenser Box'
   },
   {
     id: 'tez-hh-06',
-    name: 'Compact Twin Pack Kitchen Towels & Napkins',
+    name: 'Clean Easy Embossed Kitchen Paper Towels (Twin Pack)',
     category: 'Household Essentials',
     price: 9900,
-    image: './assets/products/household.jpg',
-    description: 'Absorbent twin-pack paper kitchen towels for spills, counters, and food prep.',
-    specs: 'Twin Pack · Absorbent Paper'
+    image: './assets/products/kitchen-towels-2pk.jpg',
+    description: 'Extra-absorbent twin pack of embossed white kitchen paper towel rolls for spills, counters, and food prep.',
+    specs: '2 Rolls · Extra Absorbent Embossed'
   },
   {
     id: 'tez-hh-07',
-    name: 'Jik Multipurpose Household Bleach 750ml',
+    name: 'Jik Multipurpose Household Disinfectant Bleach 750ml',
     category: 'Household Essentials',
-    price: 29750,
-    image: './assets/products/household.jpg',
-    description: '750ml bottle of Jik multipurpose bleach and disinfectant for floors, sinks, and laundry.',
-    specs: '750ml Bottle · Disinfectant'
+    price: 25000,
+    image: './assets/products/bleach-jik-750ml.jpg',
+    description: '750ml bottle of multipurpose household bleach that whitens laundry and kills 99.9% of surface germs.',
+    specs: '750ml Easy-Grip Bottle · Kills 99.9% Germs'
   },
   {
     id: 'tez-hh-08',
-    name: 'Jik Stain Remover & Disinfectant 750ml',
+    name: 'Concentrated Disinfecting Household Bleach 1.8L',
     category: 'Household Essentials',
-    price: 22000,
-    image: './assets/products/household.jpg',
-    description: '750ml Jik stain remover formula for whitening laundry and disinfecting hard surfaces.',
-    specs: '750ml Bottle · Stain Remover'
+    price: 29750,
+    image: './assets/products/bleach-bottle.jpg',
+    description: 'Family-size 1.8L jug of concentrated disinfecting bleach for whitening whites and sanitising bathrooms.',
+    specs: '1.8L Handle Jug · Disinfecting Bleach'
   },
   {
     id: 'tez-hh-09',
-    name: 'Harpic Disinfectant Toilet Cleaner 500ml',
+    name: 'Harpic Total Hygiene Angled-Neck Toilet Cleaner 500ml',
     category: 'Household Essentials',
     price: 19500,
-    image: './assets/products/household.jpg',
-    description: '500ml angled-neck Harpic toilet cleaner that tackles limescale and tough stains.',
-    specs: '500ml · Toilet Disinfectant'
+    image: './assets/products/toilet-cleaner-500ml.jpg',
+    description: '500ml angled-neck liquid toilet cleaner that reaches under the rim to remove limescale, stains, and odours.',
+    specs: '500ml Angled Neck · Toilet Disinfectant'
   },
   {
     id: 'tez-hh-10',
-    name: 'Dettol Antibacterial Liquid 250ml',
+    name: 'Dettol Antiseptic Disinfectant Liquid 250ml',
     category: 'Household Essentials',
-    price: 21000,
-    image: './assets/products/household.jpg',
-    description: '250ml Dettol antiseptic liquid for household cleaning, laundry rinse, and hygiene.',
-    specs: '250ml Bottle · Antiseptic'
+    price: 37500,
+    image: './assets/products/antiseptic-liquid-250ml.jpg',
+    description: '250ml bottle of concentrated chloroxylenol antiseptic liquid for first aid, bathing water, and laundry disinfection.',
+    specs: '250ml Bottle · First Aid & Hygiene'
   },
   {
     id: 'tez-hh-11',
-    name: 'Dettol Original Soap Value Pack 175g',
+    name: 'Dettol Original Antibacterial Protection Bar Soap 175g',
     category: 'Household Essentials',
     price: 10600,
-    image: './assets/products/household.jpg',
-    description: '175g Dettol Original antibacterial bar soap for reliable everyday germ protection.',
-    specs: '175g Bar · Original'
+    image: './assets/products/soap-antibacterial.jpg',
+    description: '175g green antibacterial bathing and handwashing bar soap with fresh pine scent for daily germ protection.',
+    specs: '175g Bar · Fresh Pine Antibacterial'
   },
   {
     id: 'tez-hh-12',
-    name: 'Home Microfiber Spray Mop',
+    name: 'Home Microfiber Trigger Spray Floor Mop',
     category: 'Household Essentials',
     price: 52100,
-    image: './assets/products/household.jpg',
-    description: 'Lightweight trigger-spray floor mop with refillable bottle and washable microfiber pad.',
-    specs: 'Built-in Spray Tank · Microfiber Pad'
+    image: './assets/products/spray-mop.jpg',
+    description: 'Lightweight flat microfiber floor mop with refillable water/detergent bottle and handle spray trigger.',
+    specs: 'Refillable Spray Tank · Washable Pad'
   },
   {
     id: 'tez-hh-13',
-    name: 'Long-Handle Broom and Dustpan Set',
+    name: 'Long-Handle Upright Broom and Clip-On Dustpan Set',
     category: 'Household Essentials',
     price: 44200,
-    image: './assets/products/household.jpg',
-    description: 'Stand-up sweeping broom with matching long-handle hinged dustpan for effortless room cleaning.',
-    specs: 'Upright Broom + Dustpan'
+    image: './assets/products/broom-dustpan-set.jpg',
+    description: 'Stand-up sweeping broom with matching long-handle windproof dustpan—no bending required when sweeping rooms.',
+    specs: 'Upright Broom + Standing Dustpan'
   },
   {
     id: 'tez-hh-14',
-    name: '360° Spin Mop and Bucket Set',
+    name: '360° Spin Mop and Stainless Wringer Bucket Set',
     category: 'Household Essentials',
-    price: 125000,
-    image: './assets/products/household.jpg',
-    description: 'Hands-free wringing spin mop bucket with extendable handle and microfiber mop refills.',
-    specs: '360° Spinner Bucket + Refills'
+    price: 74000,
+    image: './assets/products/spin-mop-bucket.jpg',
+    description: 'Hands-free 360-degree stainless steel spinner wringer bucket with telescopic handle and microfiber mop head.',
+    specs: 'Stainless Spinner Bucket + Telescopic Mop'
   },
   {
     id: 'tez-hh-15',
-    name: 'Heavy-Duty Dustbin Garbage Bags (20-Pack)',
+    name: 'Heavy-Duty Black Dustbin Garbage Bags (20-Pack Roll)',
     category: 'Household Essentials',
     price: 20000,
-    image: './assets/products/household.jpg',
-    description: 'Pack of 20 durable 60×50cm disposable trash bin liners for hostel and kitchen bins.',
-    specs: '20 Bags · 60 × 50cm'
+    image: './assets/products/garbage-bags-20pk.jpg',
+    description: 'Roll of 20 tear-resistant 60×50cm black drawstring trash bin liner bags for hostel and kitchen bins.',
+    specs: '20 Bags · Tear-Resistant · Drawstring'
   },
 
   // ===========================================================================
-  // 8. FOOD & SNACKS (15 products)
+  // 8. FOOD & SNACKS (15 products — Jumia Uganda current UGX prices)
   // ===========================================================================
   {
     id: 'tez-fs-01',
-    name: 'Everyday Chocolate Milk Biscuits (60 Pieces)',
+    name: 'Choco-Delights Chocolate Cream Sandwich Biscuits 180g',
     category: 'Food & Snacks',
     price: 5200,
-    image: './assets/products/snacks.jpg',
-    description: 'Value 60-piece pack of crunchy chocolate-flavoured milk biscuits for study breaks.',
-    specs: '60 Pieces · Chocolate Milk'
+    image: './assets/products/biscuits-chococreams.jpg',
+    description: 'Crunchy cocoa biscuits sandwiched with smooth chocolate cream filling for quick study-break snacking.',
+    specs: '180g Pack · Chocolate Cream Sandwich'
   },
   {
     id: 'tez-fs-02',
-    name: 'Britania Chocolate Creams 21g (30 Packets)',
+    name: 'Choco-Delight Rich Cocoa Filling Biscuits (Twin Box)',
     category: 'Food & Snacks',
-    price: 4100,
-    image: './assets/products/snacks.jpg',
-    description: 'Bundle of 30 individual 21g packets of Britania chocolate-cream sandwich biscuits.',
-    specs: '30 × 21g Packets'
+    price: 9500,
+    image: './assets/products/choco-biscuits.jpg',
+    description: 'Twin 250g boxes of rich cocoa-filled chocolate cream sandwich biscuits ideal for sharing in hostels.',
+    specs: '2 × 250g Boxes · Rich Cocoa Filling'
   },
   {
     id: 'tez-fs-03',
-    name: 'Britania Butter Biscuit Jar 1kg',
+    name: 'Britania Butter Biscuit Resealable Jar 1kg',
     category: 'Food & Snacks',
     price: 13200,
-    image: './assets/products/snacks.jpg',
-    description: 'Resealable 1kg plastic jar filled with classic crisp Britania butter biscuits.',
-    specs: '1kg Jar · Butter Biscuits',
+    image: './assets/products/biscuit-jar-butter.jpg',
+    description: 'Resealable 1kg clear plastic jar filled with golden, crisp swirled butter biscuits that stay fresh on your desk.',
+    specs: '1kg Resealable Jar · Butter Biscuits',
     featured: true
   },
   {
     id: 'tez-fs-04',
-    name: 'Britania Galaxy Biscuits Jar 1kg',
+    name: 'Hostel Snack Combo (1kg Biscuit Jar + Biscuits + Crackers)',
     category: 'Food & Snacks',
-    price: 13200,
-    image: './assets/products/snacks.jpg',
-    description: '1kg hostel snack jar of Britania Galaxy biscuits—keeps snacks fresh on your desk.',
-    specs: '1kg Jar · Galaxy'
+    price: 21500,
+    image: './assets/products/biscuit-jar-galaxy.jpg',
+    description: 'Complete student snack bundle combining a 1kg butter biscuit jar, chocolate cream cookies, and salted crackers.',
+    specs: '1kg Jar + Choco Creams + Crackers'
   },
   {
     id: 'tez-fs-05',
-    name: 'Britania Cocobite Biscuits Jar 1kg',
+    name: 'Harvest Crunchy Roasted Peanut Butter Jar 340g',
     category: 'Food & Snacks',
-    price: 13200,
-    image: './assets/products/snacks.jpg',
-    description: '1kg resealable jar of toasted coconut-flavoured Britania Cocobite biscuits.',
-    specs: '1kg Jar · Coconut Flavour'
+    price: 11500,
+    image: './assets/products/peanut-butter-jar.jpg',
+    description: 'Crunchy golden roasted peanut butter packed with real peanut bits—great on bread, toast, and crackers.',
+    specs: '340g Glass Jar · Crunchy Roasted'
   },
   {
     id: 'tez-fs-06',
-    name: 'Britania Shortcake Biscuits (108 Pieces)',
+    name: 'Aurora Medium-Roast Instant Coffee Jar 100g',
     category: 'Food & Snacks',
-    price: 7100,
-    image: './assets/products/snacks.jpg',
-    description: 'Large 108-piece sharing pack of crisp tea-time shortcake biscuits.',
-    specs: '108 Pieces · Shortcake'
+    price: 24000,
+    image: './assets/products/coffee-jar.jpg',
+    description: 'Aromatic 100g glass jar of freeze-dried instant coffee granules with wooden-finish screw lid.',
+    specs: '100g Jar · Freeze-Dried Coffee'
   },
   {
     id: 'tez-fs-07',
-    name: 'Sumz Chocolate Cookies Tin 700g',
+    name: 'Sumz Classic Pure Butter Cookies Metal Tin 700g',
     category: 'Food & Snacks',
     price: 14700,
-    image: './assets/products/snacks.jpg',
-    description: '700g gift-style metal tin of rich Sumz chocolate cookies.',
-    specs: '700g Tin · Chocolate'
+    image: './assets/products/cookies-tin.jpg',
+    description: 'Reusable royal-blue metal gift tin filled with assorted crisp pure butter cookies and pretzels.',
+    specs: '700g Metal Tin · Pure Butter Cookies'
   },
   {
     id: 'tez-fs-08',
-    name: 'Sumz Coconut Cookies Tin 1kg',
-    category: 'Food & Snacks',
-    price: 14700,
-    image: './assets/products/snacks.jpg',
-    description: '1kg Sumz cookie tin baked with real coconut crunch.',
-    specs: '1kg Tin · Coconut'
-  },
-  {
-    id: 'tez-fs-09',
-    name: 'Sumz Assorted Cookies Tin 700g',
-    category: 'Food & Snacks',
-    price: 14300,
-    image: './assets/products/snacks.jpg',
-    description: '700g assorted cookie tin featuring mixed butter, vanilla, and cocoa flavours.',
-    specs: '700g Tin · Assorted'
-  },
-  {
-    id: 'tez-fs-10',
-    name: 'Nutro Chocolate Cream Biscuits (24 Packets)',
+    name: 'Deluxe Hostel Snack Hamper (Cookies Tin, Biscuits & Crisps)',
     category: 'Food & Snacks',
     price: 38000,
     image: './assets/products/snacks.jpg',
-    description: 'Full box of 24 packs of Nutro chocolate cream-filled sandwich biscuits.',
-    specs: '24 Packets · Box'
+    description: 'Generous snack assortment featuring a butter cookies tin, 2 boxes of chocolate biscuits, and 2 crisps canisters.',
+    specs: '5-Item Snack Hamper · Hostel Sharing'
+  },
+  {
+    id: 'tez-fs-09',
+    name: 'Savory Sea Salt & Cheddar Potato Crisps (Twin Canisters)',
+    category: 'Food & Snacks',
+    price: 18000,
+    image: './assets/products/crisps-canisters.jpg',
+    description: 'Pair of resealable potato crisps canisters in Sea Salt & Black Pepper (150g) and Golden Cheddar Cheese (120g).',
+    specs: '150g + 120g Canisters · Twin Pack'
+  },
+  {
+    id: 'tez-fs-10',
+    name: 'Nutro Chocolate Cream Biscuits Carton (24 Packets)',
+    category: 'Food & Snacks',
+    price: 38000,
+    image: './assets/products/choco-biscuits.jpg',
+    description: 'Full wholesale carton of 24 individual packets of chocolate cream-filled sandwich biscuits.',
+    specs: '24 Packets · Wholesale Box'
   },
   {
     id: 'tez-fs-11',
-    name: 'TOOKE Green Banana Digestives Jar 1kg',
+    name: 'TOOKE Wholegrain Oat & Banana Digestive Biscuits',
     category: 'Food & Snacks',
-    price: 28800,
-    image: './assets/products/snacks.jpg',
-    description: 'Ugandan-made 1kg jar of nutritious TOOKE green banana flour digestive biscuits.',
-    specs: '1kg Jar · Green Banana Flour'
+    price: 14500,
+    image: './assets/products/biscuits-pack.jpg',
+    description: 'Wholesome high-fibre digestive biscuits baked with whole grains for a filling between-class snack.',
+    specs: 'High Fibre · Wholegrain Digestives'
   },
   {
     id: 'tez-fs-12',
-    name: 'Everyday Tea Time Biscuits (60 Pieces)',
+    name: 'Britania Shortcake Tea-Time Biscuits Jar 1kg',
     category: 'Food & Snacks',
-    price: 7300,
-    image: './assets/products/snacks.jpg',
-    description: '60-piece pack of light, mildly sweet tea-time biscuits.',
-    specs: '60 Pieces'
+    price: 13200,
+    image: './assets/products/biscuit-jar-butter.jpg',
+    description: '1kg resealable jar of crisp golden shortcake biscuits crafted for dipping in hot tea or coffee.',
+    specs: '1kg Jar · Tea-Time Shortcake'
   },
   {
     id: 'tez-fs-13',
-    name: 'Everyday Salted Crackers 400g',
+    name: 'Everyday Crispy & Savory Salted Crackers 250g',
     category: 'Food & Snacks',
     price: 3300,
-    image: './assets/products/snacks.jpg',
-    description: '400g pack of crisp Everyday savoury crackers—great with peanut butter or tea.',
-    specs: '400g Pack · Crackers'
+    image: './assets/products/crackers-salted.jpg',
+    description: '250g pack of light, flaky square salted crackers—delicious plain or topped with peanut butter.',
+    specs: '250g Pack · Salted Square Crackers'
   },
   {
     id: 'tez-fs-14',
-    name: 'Pringles Sour Cream & Onion Chips 165g',
+    name: 'Pringles Sour Cream & Onion Potato Crisps 165g',
     category: 'Food & Snacks',
     price: 45000,
-    image: './assets/products/snacks.jpg',
-    description: 'Full-size 165g resealable canister of stacked Sour Cream & Onion potato crisps.',
-    specs: '165g Canister · Sour Cream & Onion'
+    image: './assets/products/pringles-sourcream.jpg',
+    description: 'Full-size 165g green resealable canister of iconic Sour Cream & Onion stacked potato crisps.',
+    specs: '165g Tall Canister · Sour Cream & Onion'
   },
   {
     id: 'tez-fs-15',
-    name: 'Pringles Ketchup Flavoured Chips 165g',
+    name: 'Pringles Tangy Ketchup Flavoured Crisps 165g',
     category: 'Food & Snacks',
     price: 23400,
-    image: './assets/products/snacks.jpg',
-    description: '165g tall canister of tangy tomato ketchup seasoned Pringles potato crisps.',
-    specs: '165g Canister · Ketchup Flavour'
+    image: './assets/products/pringles-ketchup.jpg',
+    description: '165g tall red canister of zesty tomato ketchup seasoned Pringles stacked potato crisps.',
+    specs: '165g Tall Canister · Ketchup Flavour'
   },
 
   // ===========================================================================
-  // 9. OTHERS (15 products)
+  // 9. OTHERS (15 products — Jumia Uganda current UGX prices)
   // ===========================================================================
   {
     id: 'tez-ot-01',
-    name: 'Compact Folding Travel Umbrella',
+    name: 'Compact 3-Fold Automatic Travel Umbrella',
     category: 'Others',
     price: 16650,
-    image: './assets/products/utilities.jpg',
-    description: 'Lightweight portable folding umbrella that fits neatly inside a laptop backpack.',
-    specs: 'Compact 3-Fold · Rain & Sun'
+    image: './assets/products/umbrella-compact.jpg',
+    description: 'Lightweight folding black umbrella with auto open/close button and protective sleeve that fits inside a backpack.',
+    specs: 'Compact 3-Fold · Auto Button + Sleeve'
   },
   {
     id: 'tez-ot-02',
-    name: 'Windproof 3-Fold Automatic Sun & Rain Umbrella',
+    name: 'Windproof Rain Umbrella, Insulated Bottle & Torch Combo',
     category: 'Others',
-    price: 29900,
+    price: 65000,
     image: './assets/products/utilities.jpg',
-    description: 'Sturdy windproof 3-fold unisex travel umbrella designed for sudden Mukono downpours.',
-    specs: 'Windproof Frame · 3-Fold'
+    description: 'Complete Mukono rainy-season commuter pack with a folding umbrella, stainless vacuum bottle, and LED torch.',
+    specs: 'Umbrella + 950ml Bottle + LED Torch'
   },
   {
     id: 'tez-ot-03',
-    name: 'Heavy-Duty Brass Security Padlock',
+    name: 'Heavy-Duty Solid Brass Security Padlock with 3 Keys',
     category: 'Others',
     price: 21250,
-    image: './assets/products/utilities.jpg',
-    description: 'Solid brass-body padlock with hardened steel shackle for hostel doors and trunks.',
-    specs: 'Brass Body · Keys Included'
+    image: './assets/products/padlock-brass.jpg',
+    description: 'Solid brass-body security padlock with hardened steel shackle and 3 brass keys for hostel doors and metal trunks.',
+    specs: 'Solid Brass · Hardened Shackle · 3 Keys'
   },
   {
     id: 'tez-ot-04',
-    name: 'Three-Digit Combination Luggage Padlock',
+    name: 'Three-Digit Combination Luggage & Locker Padlock',
     category: 'Others',
     price: 18500,
-    image: './assets/products/utilities.jpg',
-    description: 'Keyless 3-digit resettable combination lock ideal for suitcases, lockers, and backpacks.',
-    specs: '3-Digit Code · Keyless'
+    image: './assets/products/padlock-combo.jpg',
+    description: 'Keyless 3-digit resettable dial combination lock ideal for backpack zippers, suitcases, and gym lockers.',
+    specs: '3-Digit Resettable Code · Keyless'
   },
   {
     id: 'tez-ot-05',
-    name: 'Power King 4-Way Surge Extension Cable',
+    name: 'Power King 4-Way Individual-Switch UK Extension Cable',
     category: 'Others',
     price: 26550,
-    image: './assets/products/desklamp.jpg',
-    description: 'Heavy-duty 4-way UK power extension strip with surge protection for laptops and kettles.',
-    specs: '4-Way UK Sockets · Surge Protected',
+    image: './assets/products/extension-cable-4way.jpg',
+    description: 'Heavy-duty 13A 4-gang UK power extension strip with individual neon switches and long cord for laptops and kettles.',
+    specs: '4-Gang 13A UK Sockets · Individual Switches',
     featured: true
   },
   {
     id: 'tez-ot-06',
-    name: 'David Round Hanging Mosquito Net (4x6 / 5x6)',
+    name: 'David Round Hanging Canopy Mosquito Net (4x6 / 5x6)',
     category: 'Others',
     price: 24000,
-    image: './assets/products/utilities.jpg',
-    description: 'Breathable fine-mesh round mosquito net fitting 4×6 and 5×6 hostel and bedroom beds.',
-    specs: 'Fits 4×6 & 5×6 Beds · Hanging Hoop'
+    image: './assets/products/mosquito-net.jpg',
+    description: 'Breathable fine-mesh white round hanging canopy mosquito net fitting 4×6 and 5×6 hostel and bedroom beds.',
+    specs: 'Fits 4×6 & 5×6 Beds · Top Hanging Ring'
   },
   {
     id: 'tez-ot-07',
-    name: 'Dp Light DP-7045 Rechargeable LED Torch',
+    name: 'Tactical Rechargeable High-Lumen LED Torch Flashlight',
     category: 'Others',
     price: 20580,
-    image: './assets/products/utilities.jpg',
-    description: 'Heavy-duty portable rechargeable LED searchlight torch for power outages and night walks.',
-    specs: 'DP-7045 · Rechargeable LED'
+    image: './assets/products/led-torch.jpg',
+    description: 'Durable aluminum-alloy rechargeable LED flashlight torch for campus power cuts and evening walks.',
+    specs: 'USB Rechargeable · High-Lumen LED'
   },
   {
     id: 'tez-ot-08',
-    name: 'Dp Light DP-3420 Foldable Rechargeable Desk Lamp',
+    name: 'Dp Light Foldable Gooseneck Rechargeable LED Desk Lamp',
     category: 'Others',
-    price: 13860,
+    price: 18500,
     image: './assets/products/desklamp.jpg',
-    description: 'Foldable rechargeable LED desk lamp and emergency light for study during power cuts.',
-    specs: 'DP-3420 · Foldable · Rechargeable'
+    description: 'Minimalist white rechargeable LED study desk lamp with flexible gooseneck arm for late-night revision during outages.',
+    specs: 'Flexible Gooseneck · Eye-Care LED'
   },
   {
     id: 'tez-ot-09',
-    name: 'Dp Light DP-952 Solar LED Emergency Camping Lamp',
+    name: 'Dp Light DP-952 Solar & USB Emergency Camping Lantern',
     category: 'Others',
-    price: 17960,
-    image: './assets/products/desklamp.jpg',
-    description: 'Portable solar and USB rechargeable LED lantern for hostels and emergency backup lighting.',
-    specs: 'DP-952 · Solar + Rechargeable'
+    price: 22000,
+    image: './assets/products/solar-lantern.jpg',
+    description: 'Portable 360-degree LED lantern with top solar charging panel and carry handle for reliable backup room lighting.',
+    specs: 'Solar + USB Charging · Carry Handle'
   },
   {
     id: 'tez-ot-10',
-    name: 'SPJ Non-Stick Dry Flat Iron Box',
+    name: 'SPJ Non-Stick Electric Dry & Steam Flat Iron Box',
     category: 'Others',
     price: 30200,
-    image: './assets/products/utilities.jpg',
-    description: 'Lightweight titanium non-stick dry ironing box with temperature dial for crisp uniforms.',
-    specs: 'Titanium Non-Stick Soleplate · Red/White'
+    image: './assets/products/flat-iron-box.jpg',
+    description: 'Lightweight non-stick soleplate electric clothes iron with fabric temperature dial for crisp shirts and dresses.',
+    specs: 'Non-Stick Soleplate · Adjustable Thermostat'
   },
   {
     id: 'tez-ot-11',
-    name: 'Double-Wall Insulated Stainless Water Bottle',
+    name: 'Hydro Flow 950ml Double-Wall Insulated Stainless Bottle',
     category: 'Others',
-    price: 46800,
-    image: './assets/products/utilities.jpg',
-    description: 'Vacuum-insulated stainless steel bottle keeping water cold or tea warm across campus.',
-    specs: 'Double-Wall Stainless · Leak-Proof Lid'
+    price: 28500,
+    image: './assets/products/stainless-bottle.jpg',
+    description: 'Matte grey vacuum-insulated stainless steel sports bottle with carry loop lid that keeps water cold for 24 hours.',
+    specs: '950ml · Double-Wall Vacuum · Leak-Proof'
   },
   {
     id: 'tez-ot-12',
-    name: '2-in-1 Soft Absorbent Bath & Facial Towel Set',
+    name: 'Plush 100% Cotton Absorbent Bath & Hand Towel Set (4-Pack)',
     category: 'Others',
     price: 34888,
-    image: './assets/products/utilities.jpg',
-    description: 'Plush quick-drying bath towel paired with a matching facial towel.',
-    specs: '2-Piece Set · Bath + Face Towel'
+    image: './assets/products/towel-set-2in1.jpg',
+    description: 'Stack of soft, quick-drying combed cotton bath and face towels in crisp white and dove grey.',
+    specs: '100% Cotton · White & Grey Set'
   },
   {
     id: 'tez-ot-13',
-    name: 'Plastic Clothes Hangers (12-Piece Pack)',
+    name: 'Non-Slip Wardrobe Clothes Hangers (12-Piece Pack)',
     category: 'Others',
     price: 15500,
-    image: './assets/products/utilities.jpg',
-    description: 'Pack of 12 lightweight durable plastic hangers for organizing shirts, trousers, and dresses.',
-    specs: '12 Hangers · Closet Organizer'
+    image: './assets/products/clothes-hangers-12pk.jpg',
+    description: 'Bundle of 12 sturdy contoured clothes hangers with swivel metal hooks for organizing shirts, coats, and dresses.',
+    specs: '12 Hangers · Swivel Metal Hooks'
   },
   {
     id: 'tez-ot-14',
-    name: 'Bekia 4-Layer DIY Multi-Tier Shoe Rack',
+    name: 'Bekia Multi-Tier Metal & Wood Freestanding Shoe Rack',
     category: 'Others',
-    price: 19990,
-    image: './assets/products/utilities.jpg',
-    description: 'Space-saving 4-tier snap-together shoe rack that keeps hostel doorways tidy.',
-    specs: '4 Tiers · Tool-Free Assembly'
+    price: 36000,
+    image: './assets/products/shoe-rack-4tier.jpg',
+    description: 'Space-saving multi-tier freestanding shoe organizer rack that keeps hostel doorways and wardrobes neat.',
+    specs: 'Multi-Tier · Black Steel Frame'
   },
   {
     id: 'tez-ot-15',
-    name: 'Rechargeable Electric Hot Water Warmer Bag',
+    name: 'Rechargeable Electric Plush Hot Water Warmer Bag',
     category: 'Others',
     price: 26000,
-    image: './assets/products/utilities.jpg',
-    description: 'Portable electric heated water bag with soft cover for chilly rainy nights and cramps.',
-    specs: 'Electric Heated · Soft Pouch Cover'
+    image: './assets/products/hot-water-bag.jpg',
+    description: 'Corded rechargeable electric heated velvet pouch warmer for chilly rainy nights, muscle relief, and cramps.',
+    specs: 'Fast 10-Min Charge · Soft Velvet Cover'
   }
 ];
 

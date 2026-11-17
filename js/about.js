@@ -6,7 +6,7 @@ import { formatSupportMessage, openWhatsAppHandoff } from './whatsapp.js';
 export const TEAM_MEMBERS = [
   {
     initials: 'SK',
-    name: 'Samuel Kizza',
+    name: 'Mr Ssengoba Jovan',
     role: 'Chief Executive Officer (CEO)',
     photo: './assets/team/ceo.jpg',
     zone: 'Strategy, Partnerships & Operations',
@@ -15,18 +15,18 @@ export const TEAM_MEMBERS = [
   {
     initials: 'BN',
     name: 'Brenda Namukasa',
-    role: 'Customer Care & Support',
-    photo: './assets/team/customer-care.jpg',
-    zone: 'WhatsApp Orders, Quotations & Delivery Follow-up',
-    bio: 'Manages direct WhatsApp customer support, Kampala procurement quotations, order confirmations, and timely delivery updates.'
+    role: 'Receptionist & Customer Care',
+    photo: './assets/team/receptionist.jpg',
+    zone: 'Front Desk, WhatsApp Orders & Quotations',
+    bio: 'Welcomes client enquiries, manages direct WhatsApp customer support, Kampala procurement quotations, order confirmations, and timely delivery updates.'
   },
   {
-    initials: 'BS',
-    name: 'Brian Ssemakula',
-    role: 'Tech Support',
-    photo: './assets/team/tech-support.jpg',
+    initials: 'MD',
+    name: 'Muhwana David',
+    role: 'Tech Support & Platform Lead',
+    photo: './assets/team/david.jpg',
     zone: 'Mobile App, Catalogue & Systems',
-    bio: 'Maintains the TransEaz mobile app experience, updates marketplace product listings and UGX pricing, and supports smooth ordering.'
+    bio: 'Maintains the TransEaz mobile app experience, updates marketplace product listings and Ugandan UGX pricing, and ensures smooth digital ordering.'
   }
 ];
 
